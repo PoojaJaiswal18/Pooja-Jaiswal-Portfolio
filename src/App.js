@@ -1,22 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import IrregularPolygonExperience from './components/background';
 
 function App() {
   return (
     <div className="App">
+      <IrregularPolygonExperience />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Pooja Jaiswal</h1>
+        <div className="divider"></div>
+        <p className="title">Frontend Developer</p>
+        {/* <p className="tagline">Creating elegant, interactive web experiences</p> */}
       </header>
     </div>
   );
