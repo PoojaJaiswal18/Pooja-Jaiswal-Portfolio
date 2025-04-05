@@ -3,6 +3,7 @@ import './App.css';
 import IrregularPolygonExperience from './components/background';
 import Loader from './components/Loader/Loader';
 import Navbar from './components/Navbar/Navbar.jsx';
+import Skills from './components/Skills/Skills';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,8 +36,7 @@ function App() {
             </section>
             
             <section id="skills" className="section">
-              <h2>Skills</h2>
-              
+              <Skills />
             </section>
             
             <section id="projects" className="section">

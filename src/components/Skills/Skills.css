@@ -1,0 +1,141 @@
+.terminal-card {
+    background-color: black;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    width: 100%;
+    max-width: 52rem; 
+    border: 1px solid #4a5568;
+    margin: 0 auto;
+  }
+  
+  
+  .terminal-header {
+    background-color: #2d3748;
+    padding: 0.75rem 1.25rem; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .terminal-buttons {
+    display: flex;
+  }
+  
+  .button {
+    width: 0.875rem; 
+    height: 0.875rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .red {
+    background-color: #f56565;
+  }
+  
+  .yellow {
+    background-color: #ecc94b;
+  }
+  
+  .green {
+    background-color: #48bb78;
+  }
+  
+  .terminal-title {
+    color: #cbd5e0;
+    font-size: 1rem; 
+    margin: 0 auto;
+    font-family: 'Courier New', monospace;
+  }
+  
+
+  .terminal-body {
+    padding: 1.5rem; 
+    font-family: 'Courier New', monospace;
+    font-size: 1rem; 
+    color: #cbd5e0;
+    height: 22rem; 
+    overflow: auto;
+    background-color: black;
+  }
+  
+  .command-block {
+    margin-bottom: 0.75rem; 
+  }
+  
+  .command-line {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prompt {
+    color: #48bb78;
+  }
+  
+  .command-text {
+    margin-left: 0.5rem;
+  }
+  
+  .command-output {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .output-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem; 
+  }
+  
+  .skill-item {
+    color: #63b3ed;
+    cursor: pointer;
+    transition: color 0.2s;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+  
+  .skill-item:hover {
+    color: #90cdf4;
+    background-color: rgba(45, 55, 72, 0.5); 
+  }
+  
+  .cursor {
+    width: 0.6rem;
+    height: 1.2rem; 
+    background-color: #cbd5e0;
+    margin-left: 0.25rem;
+  }
+  
+  .cursor.visible {
+    opacity: 1;
+  }
+  
+  .cursor.hidden {
+    opacity: 0;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .terminal-card {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .output-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .terminal-body {
+      height: 20rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .output-grid {
+      grid-template-columns: 1fr;
+    }
+    .terminal-body {
+      height: 18rem;
+      padding: 1rem;
+    }
+  }
