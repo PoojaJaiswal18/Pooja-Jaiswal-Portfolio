@@ -6,7 +6,7 @@ Welcome to my portfolio website! I'm **Pooja Jaiswal**, and this is a little spa
 [https://poojajaiswal18.github.io/Pooja-Jaiswal-Portfolio](https://poojajaiswal18.github.io/Pooja-Jaiswal-Portfolio)
 
 
-## 🛠 Built With:
+## Built With:
 - React
 - CSS
 - A pinch of creativity ✨
