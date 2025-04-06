@@ -1,0 +1,189 @@
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 0 2rem 3rem;
+  background-color: transparent;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 340px;
+  height: 420px;
+  perspective: 1500px;
+  margin-bottom: 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform-style: preserve-3d;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background: linear-gradient(135deg, #1e2434, #252c3b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.flip-card-front::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(70, 130, 180, 0.08), transparent 70%);
+  z-index: 0;
+}
+
+.flip-card-front h2 {
+  font-family: 'JetBrains Mono', 'Space Mono', 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  letter-spacing: -0.5px;
+}
+
+.flip-card-front p {
+  font-family: 'Outfit', 'Manrope', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+  position: relative;
+  z-index: 1;
+}
+
+.flip-card-back {
+  background: linear-gradient(135deg, #252c3b, #1a202c);
+  transform: rotateY(180deg);
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding-right: 1.5rem;
+}
+
+.flip-card-back::-webkit-scrollbar {
+  width: 4px;
+}
+
+.flip-card-back::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.flip-card-back::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+.flip-card-back h3 {
+  font-family: 'JetBrains Mono', 'Space Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.75rem 0;
+  color: #5a9bd3;
+  letter-spacing: 0.5px;
+}
+
+.flip-card-back ul {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.flip-card-back li {
+  font-family: 'Outfit', 'Manrope', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.tech:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.tech img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* Modified section styles to remove spacing between heading and cards */
+#projects.section {
+  padding-bottom: 0;
+}
+
+#projects h2 {
+  margin-bottom: 2rem;
+  font-family: 'JetBrains Mono', 'Space Mono', monospace;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1100px) {
+  .cards-container {
+    padding: 0 1rem 2rem;
+  }
+  
+  .flip-card {
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flip-card {
+    width: 100%;
+    max-width: 380px;
+  }
+}

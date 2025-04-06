@@ -4,6 +4,7 @@ import IrregularPolygonExperience from './components/background';
 import Loader from './components/Loader/Loader';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects.jsx';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,12 +42,14 @@ function App() {
             
             <section id="projects" className="section">
               <h2>Projects</h2>
-            
+              <Projects />
             </section>
             
             <section id="contact" className="section">
-              <h2>Contact</h2>
-        
+              <h3> Let's build something meaningful together.</h3> 
+              <h3>Reach out anytime:<a href="mailto:jaiswal.pooja1809@gmail.com" aria-label="Email">
+              jaiswal.pooja1809@gmail.com 
+                      </a> </h3>
             </section>
           </main>
         </>

@@ -10,12 +10,10 @@
 .section {
   min-height: 100vh;
   position: relative;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  scroll-margin-top: 80px; 
 }
 
 #about .App-header {
