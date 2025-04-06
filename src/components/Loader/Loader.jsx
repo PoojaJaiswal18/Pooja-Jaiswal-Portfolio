@@ -45,7 +45,8 @@ const Loader = () => {
           <div className="loader-content">
             {isRevealed && (
               <>
-                <img src="/loader.png" alt="Loading..." className="loader-image pop-in" />
+                <img src={`${process.env.PUBLIC_URL}/loader.png`} alt="Loading..." className="loader-image pop-in" />
+
 
               </>
             )}
