@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Pooja-Jaiswal-Portfolio/static/css/main.8a8b78a9.css",
+    "main.js": "/Pooja-Jaiswal-Portfolio/static/js/main.d2ea497e.js",
+    "static/js/453.5a1eaeff.chunk.js": "/Pooja-Jaiswal-Portfolio/static/js/453.5a1eaeff.chunk.js",
+    "index.html": "/Pooja-Jaiswal-Portfolio/index.html",
+    "main.8a8b78a9.css.map": "/Pooja-Jaiswal-Portfolio/static/css/main.8a8b78a9.css.map",
+    "main.d2ea497e.js.map": "/Pooja-Jaiswal-Portfolio/static/js/main.d2ea497e.js.map",
+    "453.5a1eaeff.chunk.js.map": "/Pooja-Jaiswal-Portfolio/static/js/453.5a1eaeff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a8b78a9.css",
+    "static/js/main.d2ea497e.js"
+  ]
+}
