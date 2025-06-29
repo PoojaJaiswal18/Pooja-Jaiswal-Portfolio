@@ -33,8 +33,7 @@ function App() {
               <header className="App-header">
                 <h1>Pooja Jaiswal</h1>
                 <div className="divider"></div>
-                <p className="title">Full Stack Developer</p>
-                {/* <p className="tagline">Creating elegant, interactive web experiences</p> */}
+                <p className="title">Software Developer</p>
               </header>
             </section>
             
